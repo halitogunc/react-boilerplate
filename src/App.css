@@ -1,0 +1,31 @@
+.App {
+  background-color: #172A3A;
+  animation: color-me-in 4s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(50px + 2vmin);
+  color: white;
+}
+
+.App-timer {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@keyframes color-me-in {
+  25% {
+    background-color: #172A3A;
+  }
+  50% {
+    background-color: #658E9C;
+  }
+  75% {
+    background-color: #6C809A;
+  }
+  100% {
+    background-color: #172A3A;
+  }
+}
