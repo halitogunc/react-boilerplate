@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.0.1",
   "repository": "https://github.com/halitogunc/react-boilerplate",
-  "description":"A boilerplate for setting up your react project in seconds with hot module reload, webpack, jest, eslint, prettier and husky support.",
+  "description": "A boilerplate for setting up your react project in seconds with hot module reload, webpack, jest, eslint, prettier and husky support.",
   "author": "Halit Ogunc <halitogunc@gmail.com>",
   "main": "index.js",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
     "css-loader": "~3.3.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
@@ -49,9 +50,9 @@
     "node": ">=10.13.0"
   },
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
     "start:profiling": "yarn start --profiling",
-    "build": "NODE_ENV=production webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "build:profiling": "yarn build --profiling",
     "test": "jest",
     "test:coverage": "yarn test --coverage",
@@ -81,5 +82,5 @@
     "javascript",
     "front-end",
     "node"
-	]
+  ]
 }
