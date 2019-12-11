@@ -7,9 +7,9 @@ on:
     branches:
       - '**' # matches all branch
   schedule:
-    branches: 
-      - master
-      - cron: '0 22 * * 6'  # every week at 22:00 on Saturday
+    - cron: '0 22 * * 6'  # every week at 22:00 on Saturday
+      branches: 
+       - master
 
 jobs: 
   build:
