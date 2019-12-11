@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/halitogunc/react-boilerplate",
   "description": "A boilerplate for setting up your react project in seconds with hot module reload, webpack, jest, eslint, prettier and husky support.",
   "author": "Halit Ogunc <halitogunc@gmail.com>",
