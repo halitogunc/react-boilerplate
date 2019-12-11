@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches: 
-      - '**' # matches all branch
+      - master
   pull_request:
     branches:
       - '**' # matches all branch
