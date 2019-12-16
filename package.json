@@ -57,7 +57,7 @@
     "test": "jest",
     "test:coverage": "yarn test --coverage",
     "lint": "eslint --ext .js,.jsx src/",
-    "lint:fix": "eslint --ext .js,.jsx src/ --fix",
+    "lint:fix": "eslint --ext .js,.jsx src/ --fix --max-warnings=0",
     "precommit": "lint-staged"
   },
   "husky": {
