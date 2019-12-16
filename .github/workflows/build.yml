@@ -11,8 +11,9 @@ on:
       branches: 
        - master
 
-jobs: 
-  build:
+jobs:
+  lint-test-build:
+    name: Lint & Test & Build
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -21,17 +22,23 @@ jobs:
         node-version: [10.13.x, 12.x, 13.x]
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Check out code
+        uses: actions/checkout@v1
+
       - name: Setup Node
         uses: actions/setup-node@v1.1.0
         with:
           node-version: ${{ matrix.node }}
-      - name: Install && Lint && Test && Build 
+      
+      - name: Lint
         run: |
           yarn install
           yarn lint
-          yarn test
-          yarn build
-        shell: bash
+
+      - name: Test
+        run: yarn test
+
+      - name: Build 
+        run: yarn build
 
 
