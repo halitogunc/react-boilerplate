@@ -12,7 +12,7 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'react-hooks'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
@@ -36,6 +36,9 @@ module.exports = {
     // Allow .js files to use JSX syntax.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
 
     // Ensure <a> tags are valid.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
